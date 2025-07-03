@@ -1,0 +1,55 @@
+# Grocery bill calculator
+bread_price = float(input("Enter the price of Bread: "))
+eggs_price = float(input("Enter the price of Eggs: "))
+shampoo_price = float(input("Enter the price of Shampoo:"))
+total_bill = bread_price + eggs_price + shampoo_price
+print("Total bill:", total_bill)
+
+# Convert minutes to hours
+class_duration = int(input("Enter class duration in minutes: "))
+hours = class_duration / 60
+week = hours * 3 
+print("Class duration in Hours:", hours)
+print("Total hours in a week:", week)
+
+# Student bus pass eligibility
+age = int(input("Enter your age: "))
+is_eligible = age >= 18
+print("Eligible for student pass:", is_eligible)
+
+# Course completion message
+name = input("Enter your name: ")
+course = input("Enter course name: ")
+print("Congratulations", name, "for completing", course)
+
+# BMI calculator
+weight = float(input("Enter weight in kg: "))
+height = float(input("Enter height in meters: "))
+bmi = weight / (height ** 2)
+print("BMI:", bmi)
+print("\nBMI Category:", )
+print("Underweight: less than 18.5")
+print("Normal weight: 18.5-24.9")
+print("Overweight: 25-29.9")
+print("Obese: 30 or greater")
+
+# Step 1: Calculate speed
+distance_covered = float(input("Enter distance you traveled (km): "))
+time_taken_minutes = float(input("Enter time it took (minutes): "))
+
+# Convert time to hours
+time_taken_hours = time_taken_minutes / 60
+
+# Calculate speed
+speed = distance_covered / time_taken_hours
+print("Calculated speed:", round(speed, 2), "km/h")
+
+# Step 2: Use that speed to estimate time for another trip
+new_distance = float(input("Enter a new distance to estimate travel time (km): "))
+estimated_time_hours = new_distance / speed
+estimated_time_minutes = estimated_time_hours * 60
+
+print("Estimated travel time for", new_distance, "km:")
+print("In hours:", round(estimated_time_hours, 2))
+print("In minutes:", round(estimated_time_minutes))
+
